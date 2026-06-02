@@ -10,7 +10,8 @@ while True:
     print("\n===== SISTEMA DE PLAYLIST =====")
     print("1. Crear cuenta")
     print("2. Iniciar sesión")
-    print("3. Salir")
+    print("3. entrar al menu principal ")
+    print("4. salir")
 
     opcion = input("Seleccione una opción: ").strip()
 
@@ -44,12 +45,13 @@ while True:
 
     elif opcion == "3":
 
-        print("Programa finalizado.")
+        print("entrando al menu principal")
         break
-
+    elif opcion == "4":
+        print("saliendo del sistema ...")
+        exit ()
     else:
-
-        print("Opción inválida.")
+        print("opcion invalida")
 # ==========================================
 # SEMANA 2
 # Menú principal de Playlist
