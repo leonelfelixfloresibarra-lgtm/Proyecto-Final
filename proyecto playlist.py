@@ -10,8 +10,7 @@ while True:
     print("\n===== SISTEMA DE PLAYLIST =====")
     print("1. Crear cuenta")
     print("2. Iniciar sesión")
-    print("3. entrar al menu principal ")
-    print("4. salir")
+    print("3. salir")
 
     opcion = input("Seleccione una opción: ").strip()
 
@@ -40,14 +39,8 @@ while True:
 
         if usuario in usuarios and usuarios[usuario] == contraseña:
             print("Inicio de sesión exitoso.")
-        else:
-            print("Usuario o contraseña incorrectos.")
-
+            break
     elif opcion == "3":
-
-        print("entrando al menu principal")
-        break
-    elif opcion == "4":
         print("saliendo del sistema ...")
         exit ()
     else:
@@ -67,7 +60,7 @@ while True:
     print("3. Mostrar playlist")
     print("4. Buscar canción")
     print("5. Contar canciones")
-    print("6. Salir")
+    print("6. cerrar sesión")
 
     opcion = input("Seleccione una opción: ")
 
@@ -113,7 +106,7 @@ while True:
 
     elif opcion == "6":
 
-        print("Saliendo...")
+        print("Cerrando sesión...")
         break
 
     else:
